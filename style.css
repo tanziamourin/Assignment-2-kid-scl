@@ -13,4 +13,131 @@
     font-weight: 400;
     font-style: normal;
   }
+  /* bodystyle */
+  body{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #111111;
+    background-color: #FFFFFF;
+   
+  }
+  /* nav style */
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+ 
+  .nav-item-1{
+    display: flex;
+    gap: 10px;
+  }
+  /* .nav-item-1 h1{
+    font-size: 32px;
+    line-height: 30px;
+    
+  } */
+  .nav-item-1 img{
+    width: 60px;
+    height: 60px;
+  }
   
+  .nav-item-2{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    font-size:20px ;
+  }
+
+  /* li text color  */
+  .nav-item-2 .home{
+    color:#FEA301 ;
+  }
+  .nav-item-2 .about{
+    color: #01ACFD;
+  }
+  .nav-item-2 .facilites{
+    color: #05D4DF;
+  }
+  .nav-item-2 .admission{
+    color: #5D58EF;
+  }
+  /* navbar btn style */
+  
+  .navbar>div>i{
+    display: none;
+  }
+  .nav-item-3-btn{
+    width: 190px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FEA301;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    
+  }
+  /* hero style */
+  .hero-section{
+    display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+   
+  }
+.hero-content .hero-h1{
+    font-size: 56px;
+    line-height: 61px;
+}
+.empowering{
+    color: #FEA301;
+}
+.towards{
+    color: #01ACFD;
+}
+.hero-p{
+    font-size: 20px;
+}
+.hero-btn{
+    width: 190px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color:#111111;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+}
+
+  /* responsive style */
+  @media screen and  (max-width: 576px) {
+     .nav-item-1>h1 , .nav-item-2 , .nav-item-3-btn{
+        display: none;
+     
+    }
+    /* .hero-section{
+        flex-direction: column-reverse;
+    }
+     */
+  }
+
+
+
+  @media screen and (min-width: 576px) and (max-width: 992px){
+   
+    .navbar{
+     flex-wrap:wrap;
+    } 
+    .nav-item-2{
+        margin-right: 20px;
+    }
+    .nav-item-3-btn{
+        margin-left: 250px;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    
+    
+  }
